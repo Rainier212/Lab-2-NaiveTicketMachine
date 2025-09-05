@@ -83,4 +83,12 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    
+    /**
+     * Reduce price by the given amount.
+     */
+    public void discount(int amount)
+    {
+        price = price - amount;
+    }
 }
