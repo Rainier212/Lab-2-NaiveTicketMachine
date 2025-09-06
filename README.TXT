@@ -55,17 +55,12 @@ ANSWERS TO QUESTIONS:
 11. It has initial values stored into the fields. The constructor has the same name as the class, TicketMachine.
 
 12. private int count;                 (int)
-    private Student representative;    ()
-    private Server host;               ()
+    private Student representative;    (Student)
+    private Server host;               (Server)
 
-13. private boolean alive;             ()
-    private Person tutor;              ()
-    private Game game;                 ()
-
-**Questions 12-13 not completed.**
-
-
-14. ?
+13. private boolean alive;             (alive)
+    private Person tutor;              (tutor)
+    private Game game;                 (game)
 
 15. int private price -> Shows multiple red diagonal lines crossing each other.
     private price int -> Shows multiple red diagonal lines crossing each other.
@@ -76,20 +71,23 @@ The class diagram does gives clues to which orderings are possible. If there are
 
 16. It is alway necessary since it's basically like a period at the end of a sentence. It tells the computer where does my statement end.
 
-17. ?
+17. private int status;
 
 18. It belongs to the Student class.
 
-19. ?
+19. It has 2 parameters. The types are double and String.
 
-20. ?
+20. Yes, it should be stored somewhere persistent like on the object's field. It can probably have a field of type String and double. The String would be like the title of the Book and the double would most likely be the price of the Book. No we cannot know anything for sure about the names of its field since the programmer could have chosen different names for the fields.
 
-21. ?
+21. public Pet(String petsName)
+    {
+          name = petsName
+    }
 
-22. CHALLENGE EXERCISE (to do)
+22. The header would be something like this: public newDate(String month, int day, int year)
 
-23. Difference headers: 
-    Difference bodies:
+23. Difference headers: The method names are different (one is called getBalance, while the other is getPrice).
+    Difference bodies: One returns the value of a field named price while the other returns the value of a field named balance.
 
 24. "How much money is in my balance?"
 
@@ -101,4 +99,31 @@ The class diagram does gives clues to which orderings are possible. If there are
 
 29. They have the same return statements which is "void". They both do not return any value, which is why they use the void statement.
 
-32. ?
+32. Yes, the addCredits methos is a mutator. I could demonstrate it by first finding out the initial credit value by calling the getCredits method. Then I would call the addCredits method, and input the amount I would like to add. After I would again call the getCredits method to find out the credit value has changed.
+
+34. public void setAge(int currentAge)
+    {
+         age = currentAge;
+    }
+
+35. public void setAlive(boolean isAlive)
+    {
+         alive = isAlive;
+    }
+
+36. After opening the inspector, I see that the value of price is 0 instead of the value I inputted, which was 100.
+
+37. My cat has green eyes.
+
+39. I think # price cents will be printed.
+
+40. # price cents.
+
+42. They show different outputs since they both have different values of the price field.
+
+43. Yes, it does. %d, I believe it is the value of the price, but I'm not so sure what %n is.
+
+44. The price of a ticket is now fixed at 1000 cents, and you cannot input a price for it when creating a new machine.
+
+46. No, it doesn't need to take any parameters. The empty methos is a mutator since it changes the object in question.
+
